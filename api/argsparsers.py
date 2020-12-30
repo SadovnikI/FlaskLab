@@ -15,10 +15,7 @@ wallet_args = reqparse.RequestParser()
 wallet_args.add_argument("id", type=str, help="Id is invalid", required=True)
 wallet_args.add_argument("currency", type=str, help="Currency is invalid", required=True)
 wallet_args.add_argument("money", type=int, help="Money is invalid", required=True)
-wallet_args.add_argument("owner_id", type=int, help="Owner id is invalid", required=True)
 
-wallet_temp_user_id = reqparse.RequestParser()
-wallet_temp_user_id.add_argument("owner_id", type=str, help="Owner id is invalid", required=True)
 
 transaction_temp = reqparse.RequestParser()
 transaction_temp.add_argument("id", type=str, help="Id is invalid", required=True)
